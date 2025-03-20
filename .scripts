@@ -1,0 +1,22 @@
+
+
+# login to fsys vpn as regular user 
+
+fvu (){
+    local pass
+    pass=$(pass fsys/ldap | head -1)
+    echo "$pass" | nmcli connection up fsys-radix --ask 
+  }
+
+fvd  (){
+    nmcli connection down fsys-radix
+  }
+
+favu (){
+    local pass
+    pass=$(pass fsys/ldap | head -1)
+    echo "$pass" | nmcli connection up fsys-admin-radix --ask 
+  }
+favd  (){
+    nmcli connection down fsys-admin-radix
+  }

@@ -1,0 +1,7 @@
+alias ll="ls -la --color=auto"
+alias xx=clear
+alias gs="git status"
+alias vi=nvim
+alias cat=bat
+alias repos="cd ~/01_fsys/repos/"
+alias py=python

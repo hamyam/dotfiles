@@ -3,7 +3,7 @@
 format = """
 [](color_orange)\
 $username\
-$hostname\
+(bg:color_orange)$hostname\
 [](bg:color_yellow fg:color_orange)\
 $directory\
 [](fg:color_yellow bg:color_aqua)\
@@ -77,7 +77,7 @@ format = '[ $user ]($style)'
 
 [hostname]
 ssh_only = true
-format = '[$ssh_symbol](bold blue) on [$hostname](bold red) '
+format = '[$ssh_symbol](bold black bg:color_orange)[on ](bg:color_orange)[$hostname ](bold blue bg:color_orange)'
 disabled = false
 
 [directory]

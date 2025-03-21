@@ -14,7 +14,7 @@ fvd  (){
 
 favu (){
     local pass
-    pass=$(pass fsys/ldap | head -1)
+    pass=$(pass fsys/fsys-admin-jx | head -1)
     echo "$pass" | nmcli connection up fsys-admin-radix --ask 
   }
 favd  (){

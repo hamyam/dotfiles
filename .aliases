@@ -5,3 +5,6 @@ alias vi=nvim
 alias cat=bat
 alias repos="cd ~/01_fsys/repos/"
 alias py=python
+alias k=kubectl
+alias gg=lazygit
+alias mixer=ncpamixer

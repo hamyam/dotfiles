@@ -8,3 +8,10 @@ alias py=python
 alias k=kubectl
 alias gg=lazygit
 alias mixer=ncpamixer
+alias p3n="py -m venv venv"
+alias p3a="source venv/bin/activate"
+alias p3r="venv/bin/pip3 freeze > requirements.txt"
+alias p3u="pip install --upgrade pip && venv/Scripts/pip3 list --outdated --format=freeze | grep -v '^-e' | cut -d = -f 1 | xargs -n1 venv/Scripts/pip3 install -U"
+alias p3i="venv/bin/pip3 install -r requirements.txt"
+alias p3d=deactivate
+ 

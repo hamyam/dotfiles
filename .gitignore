@@ -1,0 +1,15 @@
+.config/Electron
+.config/Thunar
+.config/dconf
+.config/go/telemetry/local
+.config/htop
+.config/i3
+.config/nvim
+.config/lazygit
+.config/pipewire/pipewire.conf.d
+.config/pulse
+.config/runit/services
+.config/thefuck
+.config/xfce4
+.config/user-dirs.dirs
+.config/user-dirs.locale

@@ -1,4 +1,4 @@
-feh --bg-scale /home/jannik/Downloads/digital-art-volcano-illustration.jpg
+feh --bg-scale /home/jannik/02_privat/images/digital-art-volcano-illustration.jpg
 setxkbmap -layout de
 numlockx &
 picom --config ~/.config/picom/config --backend glx &

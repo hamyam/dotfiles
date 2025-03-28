@@ -10,6 +10,10 @@ xrender-sync-fence = true;
 
 corner-radius = 10;
 
+opacity-rule = [
+  "90:class_g = 'Dunst'"
+];
+
 
 ## ----- Fading ----- ##
 #  

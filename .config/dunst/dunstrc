@@ -1,0 +1,55 @@
+
+[global]
+monitor = 0
+width = (0, 500)
+height = (5, 100)
+offset = 30
+origin = top-right
+indicate_hidden = yes
+shrink = no
+transparency = 20
+frame_color = "#82aaff"
+separator_color = frame
+padding = 16
+horizontal_padding = 20
+frame_width = 2
+corner_radius = 12
+font = FiraCode Nerd Font 10
+line_height = 4
+separator_height = 2
+idle_threshold = 120
+follow = mouse
+ignore_newline = no
+stack_duplicates = true
+hide_duplicate_count = false
+show_indicators = yes
+word_wrap = yes
+markup = full
+
+# Icons via Nerd Font
+icon_position = left
+max_icon_size = 48
+
+# Set notification format (symbol + summary)
+format = "<b>%s</b>\n%b"
+
+# Urgency Levels
+
+[urgency_low]
+background = "#1e1e2e"
+foreground = "#c8d3f5"
+frame_color = "#1e1e2e"
+timeout = 5
+
+[urgency_normal]
+background = "#1e1e2e"
+foreground = "#c8d3f5"
+frame_color = "#82aaff"
+timeout = 8
+
+[urgency_critical]
+background = "#1e1e2e"
+foreground = "#ff757f"
+frame_color = "#ff757f"
+timeout = 0
+

@@ -1,9 +1,14 @@
-feh --bg-scale /home/jannik/02_privat/images/digital-art-volcano-illustration.jpg
+# ~/.xprofile
+export XDG_RUNTIME_DIR="/tmp/xdg-runtime-$UID"
+export HA_TOKEN="$(cat /home/jannik/02_privat/hass/token)"
+mkdir -p "$XDG_RUNTIME_DIR"
+chmod 700 "$XDG_RUNTIME_DIR"
+
 setxkbmap -layout de
 numlockx &
 picom --config ~/.config/picom/config --backend glx &
-/home/jannik/.applications/bin/dwmstatus 2>&1 >/dev/null &
-pipewire & 
+pipewire &
 dunst &
-
-exec /home/jannik/00_applications/dwm/dwm
+feh --bg-scale /home/jannik/02_privat/images/digital-art-volcano-illustration.jpg
+/home/jannik/.applications/bin/dwmstatus 2>&1 >/dev/null &
+runsvdir -P ~/.config/sv >~/.config/logs/runsvdir.log 2>&1 &

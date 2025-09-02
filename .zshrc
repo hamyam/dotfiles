@@ -145,3 +145,6 @@ eval "$(pyenv init - zsh)"
 
 export PATH="$HOME/.applications/bin:$PATH"
 export PATH="$HOME/.npm-global/bin:$PATH"
+export SVDIR=$HOME/.config/sv
+
+eval "$(atuin init zsh --disable-up-arrow)"

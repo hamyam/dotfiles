@@ -1,6 +1,7 @@
-alias ll="ls -la --color=auto"
+alias ll="ls -lah --color=auto"
 alias xx=clear
 alias gs="git status"
+alias gsu="git submodule update --init"
 alias vi=nvim
 alias cat=bat
 alias repos="cd ~/01_fsys/repos/"
@@ -14,4 +15,6 @@ alias p3r="venv/bin/pip3 freeze > requirements.txt"
 alias p3u="pip install --upgrade pip && venv/Scripts/pip3 list --outdated --format=freeze | grep -v '^-e' | cut -d = -f 1 | xargs -n1 venv/Scripts/pip3 install -U"
 alias p3i="venv/bin/pip3 install -r requirements.txt"
 alias p3d=deactivate
- 
+alias aj="nvim ~/01_fsys/03_it/journal/README.md"
+alias repos="cd /home/jannik/01_fsys/01_repos/"
+alias ff="/home/jannik/.applications/bin/fzf-search"

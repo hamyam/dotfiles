@@ -63,6 +63,20 @@ config.keys = {
 			direction = "Down",
 		}),
 	},
+	{
+		key = "h",
+		mods = "LEADER",
+		action = wezterm.action.SplitPane({
+			direction = "Left",
+		}),
+	},
+	{
+		key = "l",
+		mods = "LEADER",
+		action = wezterm.action.SplitPane({
+			direction = "Right",
+		}),
+	},
 	-- Send "CTRL-A" to the terminal when pressing CTRL-A, CTRL-A
 	{
 		key = "r",

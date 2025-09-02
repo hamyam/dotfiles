@@ -20,3 +20,7 @@ favu (){
 favd  (){
     nmcli connection down fsys-admin-radix
   }
+
+mg (){
+ mv "$1" "$2" && cd "$(dirname "$2")"
+}
